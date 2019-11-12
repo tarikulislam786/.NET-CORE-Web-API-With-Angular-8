@@ -1,0 +1,254 @@
+<div class="card card-primary">
+  <!--<div class="card-header">
+    <h3 class="card-title">PutUp Details</h3>
+  </div>-->
+  <!-- /.card-header -->
+  <!-- form start -->
+  <!--<form #form="ngForm" autocomplete="off" (submit)="onPutUpDetailSubmit(form)">
+    <div class="card-body">
+      <div class="form-group">
+        <input type="hidden" name="Id" [value]="service.formData.Id" />
+        <label for="exampleInputEmail1">Subject</label>
+        <input name="Subject" #Subject="ngModel" [(ngModel)]="service.formData.Subject" class="form-control" placeholder="Subject" required />
+      </div>
+       <div class="form-group">
+        <label for="exampleInputEmail1">Description</label>
+        <input name="Description" #Description="ngModel" [(ngModel)]="service.formData.Description" class="form-control" placeholder="Description" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Reference Number</label>
+        <input name="ReferenceNumber" #ReferenceNumber="ngModel" [(ngModel)]="service.formData.ReferenceNumber" class="form-control" placeholder="Reference Number" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Receive Type</label>
+        <select name="ReceiveType" #ReceiveType="ngModel" [(ngModel)]="service.formData.ReceiveType" class="form-control" [class.is-invalid]="!isValid && service.formData.ReceiveType ==0">
+          <option value="0">-Select-</option>
+          <option value="1">Insider</option>
+          <option value="2">Outsider</option>
+          <option value="3">New Initiative</option>
+        </select>
+
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Visitor Name</label>
+        <input name="VisitorName" #VisitorName="ngModel" [(ngModel)]="service.formData.VisitorName" class="form-control" placeholder="Visitor Name" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Visitor Mobile Number</label>
+        <input name="VisitorMobileNumber" #VisitorMobileNumber="ngModel" [(ngModel)]="service.formData.VisitorMobileNumber" class="form-control" placeholder="Visitor Mobile Number" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Visitor Mobile Email</label>
+        <input name="VisitorMobileEmail" #VisitorMobileEmail="ngModel" [(ngModel)]="service.formData.VisitorMobileEmail" class="form-control" placeholder="Visitor Mobile Email" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">SendTo</label>
+        <input name="SendTo" #SendTo="ngModel" [(ngModel)]="service.formData.SendTo" class="form-control" placeholder="Send To" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Sending To Unit Name</label>
+        <input name="SendingToUnitName" #SendingToUnitName="ngModel" [(ngModel)]="service.formData.SendingToUnitName" class="form-control" placeholder="Sending To Unit Name" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">PutUp Date</label>
+        <div class="input-group">
+          <input name="PutUpDate" #PutUpDate="ngModel" [(ngModel)]="service.formData.PutUpDate" matInput [matDatepicker]="picker" placeholder="Choose a date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </div>
+
+
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Bar Code</label>
+        <input name="BarCode" #BarCode="ngModel" [(ngModel)]="service.formData.BarCode" class="form-control" placeholder="BarCode" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Status</label>
+        <select name="Status" #Status="ngModel" [(ngModel)]="service.formData.Status" class="form-control" [class.is-invalid]="!isValid && service.formData.Status ==0">
+          <option value="0">-Select-</option>
+          <option value="1">Open</option>
+          <option value="2">On Hold</option>
+          <option value="3">Pending</option>
+        </select>
+      </div>
+    </div>
+
+
+    <div class="card-footer">
+      <div class="form-group">
+        <button class="btn btn-success" type="submit" [disabled]="form.invalid"><i class="fa fa-database"></i> Submit</button>
+        <button [mat-dialog-close] class="btn btn-outline-dark ml-1" type="button"><i class="fa fa-close"></i> Close</button>
+      </div>
+    </div>
+  </form>-->
+  <div class="form-group">
+    <div class="card-header">
+      <h3 class="card-title">PutUp Details</h3>
+    </div>
+    <!-- /.card-header -->
+  </div>
+  <form #form="ngForm" autocomplete="off" (submit)="onPutUpDetailSubmit(form)">
+    <div class="card-body">
+      <div class="form-group">
+        <input type="hidden" name="Id" [value]="service.formData.Id" />
+        <label for="exampleInputEmail1">Subject</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fa fa-info-circle" [class.green-icon]="Subject.valid" [class.red-icon]="Subject.invalid && Subject.touched"></i>
+            </div>
+          </div>
+
+          <input name="Subject" #Subject="ngModel" [(ngModel)]="service.formData.Subject" class="form-control" placeholder="Subject" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Description</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-info-circle" [class.green-icon]="Description.valid" [class.red-icon]="Description.invalid && Description.touched"></i>
+            </div>
+          </div>
+          <input name="Description" #Description="ngModel" [(ngModel)]="service.formData.Description" class="form-control" placeholder="Description" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Reference Number</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-info-circle" [class.green-icon]="ReferenceNumber.valid" [class.red-icon]="ReferenceNumber.invalid && ReferenceNumber.touched"></i>
+            </div>
+          </div>
+          <input name="ReferenceNumber" #ReferenceNumber="ngModel" [(ngModel)]="service.formData.ReferenceNumber" class="form-control" placeholder="Reference Number" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Receive Type</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-info-circle" [class.green-icon]="ReceiveType.valid" [class.red-icon]="ReceiveType.invalid && ReceiveType.touched"></i>
+            </div>
+          </div>
+          <select name="ReceiveType" #ReceiveType="ngModel" [(ngModel)]="service.formData.ReceiveType" class="form-control" [class.is-invalid]="!isValid && service.formData.ReceiveType ==0">
+            <option value="0">-Select ReceiveType-</option>
+            <option value="1">Insider</option>
+            <option value="2">Outsider</option>
+            <option value="3">New Initiative</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Visitor Name</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-info-circle" [class.green-icon]="VisitorName.valid" [class.red-icon]="VisitorName.invalid && VisitorName.touched"></i>
+            </div>
+          </div>
+          <input name="VisitorName" #VisitorName="ngModel" [(ngModel)]="service.formData.VisitorName" class="form-control" placeholder="Visitor Name" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Visitor Mobile Number</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-info-circle" [class.green-icon]="VisitorMobileNumber.valid" [class.red-icon]="VisitorMobileNumber.invalid && VisitorMobileNumber.touched"></i>
+            </div>
+          </div>
+          <input name="VisitorMobileNumber" #VisitorMobileNumber="ngModel" [(ngModel)]="service.formData.VisitorMobileNumber" class="form-control" placeholder="Visitor Mobile Number" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Visitor Mobile Email</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-info-circle" [class.green-icon]="VisitorMobileEmail.valid" [class.red-icon]="VisitorMobileEmail.invalid && VisitorMobileEmail.touched"></i>
+            </div>
+          </div>
+          <input name="VisitorMobileEmail" #VisitorMobileEmail="ngModel" [(ngModel)]="service.formData.VisitorMobileEmail" class="form-control" placeholder="Visitor Mobile Email" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">SendTo</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-info-circle" [class.green-icon]="SendTo.valid" [class.red-icon]="SendTo.invalid && SendTo.touched"></i>
+            </div>
+          </div>
+          <input name="SendTo" #SendTo="ngModel" [(ngModel)]="service.formData.SendTo" class="form-control" placeholder="Send To" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Sending To Unit Name</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-info-circle" [class.green-icon]="SendingToUnitName.valid" [class.red-icon]="SendingToUnitName.invalid && SendingToUnitName.touched"></i>
+            </div>
+          </div>
+          <input name="SendingToUnitName" #SendingToUnitName="ngModel" [(ngModel)]="service.formData.SendingToUnitName" class="form-control" placeholder="Sending To Unit Name" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">PutUp Date</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-calendar"></i>
+            </div>
+          </div>
+
+          <input name="PutUpDate" #PutUpDate="ngModel" [(ngModel)]="service.formData.PutUpDate" matInput [matDatepicker]="picker" placeholder="Choose a date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Bar Code</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-info-circle" [class.green-icon]="BarCode.valid" [class.red-icon]="BarCode.invalid && BarCode.touched"></i>
+            </div>
+          </div>
+          <input name="BarCode" #BarCode="ngModel" [(ngModel)]="service.formData.BarCode" class="form-control" placeholder="BarCode" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Status</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-info-circle" [class.green-icon]="Status.valid" [class.red-icon]="Status.invalid && Status.touched"></i>
+            </div>
+          </div>
+          <select name="Status" #Status="ngModel" [(ngModel)]="service.formData.Status" class="form-control" [class.is-invalid]="!isValid && service.formData.Status ==0">
+            <option value="0">-Select-Status</option>
+            <option value="1">Open</option>
+            <option value="2">On Hold</option>
+            <option value="3">Pending</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer">
+      <div class="form-group">
+        <button class="btn btn-success" type="submit" [disabled]="form.invalid"><i class="fa fa-database"></i> Submit</button>
+        <button [mat-dialog-close] class="btn btn-outline-dark ml-1" type="button"><i class="fa fa-close"></i> Close</button>
+      </div>
+    </div>
+    <!-- /.card-footer -->
+  </form>
+
+  
+</div>

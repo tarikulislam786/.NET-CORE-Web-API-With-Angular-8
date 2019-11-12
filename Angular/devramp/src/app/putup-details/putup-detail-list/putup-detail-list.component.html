@@ -1,0 +1,152 @@
+<div class="topcontainer pt-3">
+  <div class="row">
+    <div class="col-md-9">
+      <h4>PutUps</h4>
+    </div>
+    <div class="col-md-3">
+      <!--<a (click)="AddOrEditItem(null,0)" class="btn btn-outline-primary">
+        <i class="fa fa-plus-square mr5"></i> Create New
+      </a>-->
+
+      <a class="btn btn-outline-primary float-right" (click)="AddOrEditItem(null,0)">
+        <i class="fa fa-plus-square"></i>
+        Add new
+      </a>
+    </div>
+  </div>
+
+</div>
+<div class="containers mt-4">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image">
+        <i class="fa fa-search"></i>
+      </div>
+
+      <mat-card-title>Search</mat-card-title>
+      <!--<mat-card-subtitle>Dog Breed</mat-card-subtitle>-->
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="searching mb-4">
+        <div class="row">
+          <div class="col-md-10">
+            <div class="form-inline">
+              <div class="form-group">
+                <label class="mr-4" for="email">PutUp Name: </label>
+                <input class="form-control" type="text" name="search" [(ngModel)]="filter">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+
+  </mat-card>
+</div>
+
+
+<div class="containers mt-4">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image">
+
+      </div>
+
+      <!--<mat-card-title>Search</mat-card-title>-->
+      <!--<mat-card-subtitle>Dog Breed</mat-card-subtitle>-->
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <table class="table table-hover">
+        <thead class="thead-light">
+        <th ng-click="sort('Subject')">
+          Subject
+          <span class="glyphicon sort-icon" *ngIf="key =='Subject'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('Description')">
+          Description
+          <span class="glyphicon sort-icon" *ngIf="key =='Description'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('Reference')">
+          Reference
+          <span class="glyphicon sort-icon" *ngIf="key =='Reference'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('ReceiveType')">
+          Receive Type
+          <span class="glyphicon sort-icon" *ngIf="key =='ReceiveType'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('Price')">
+          Visitor Name
+          <span class="glyphicon sort-icon" *ngIf="key =='Description'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('VisitorMobileNumber')">
+          Visitor's Mobile
+          <span class="glyphicon sort-icon" *ngIf="key =='VisitorMobileNumber'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('VisitorMobileEmail')">
+          Visitor's Email
+          <span class="glyphicon sort-icon" *ngIf="key =='VisitorMobileEmail'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('SendTo')">
+          Send To
+          <span class="glyphicon sort-icon" *ngIf="key =='SendTo'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('SendingToUnitName')">
+          Send To Unit Name
+          <span class="glyphicon sort-icon" *ngIf="key =='SendingToUnitName'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('PutUpDate')">
+          PutUp Date
+          <span class="glyphicon sort-icon" *ngIf="key =='PutUpDate'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('BarCode')">
+          BarCode
+          <span class="glyphicon sort-icon" *ngIf="key =='Description'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('Status')">
+          Status
+          <span class="glyphicon sort-icon" *ngIf="key =='Status'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        
+        <th class="text-right">Actions</th>
+        </thead>
+
+        <tbody>
+
+          <tr *ngFor="let pd of service.list | orderBy: key : reverse | filter:filter | paginate: { itemsPerPage: 5, currentPage: p }; let i= index;">
+            <!--<th (click)="openForEdit(pd.Id)">{{pd.Id}}</th>-->
+            <td (click)="populateForm(pd)">{{pd.Subject}}</td>
+            <td (click)="populateForm(pd)">{{pd.Description}}</td>
+            <td (click)="populateForm(pd)">{{pd.ReferenceNumber}}</td>
+            <td (click)="populateForm(pd)">{{pd.ReceiveType}}</td>
+            <td (click)="populateForm(pd)">{{pd.VisitorName}}</td>
+            <td (click)="populateForm(pd)">{{pd.VisitorMobileNumber}}</td>
+            <td (click)="populateForm(pd)">{{pd.VisitorMobileEmail}}</td>
+            <td (click)="populateForm(pd)">{{pd.SendTo}}</td>
+            <td (click)="populateForm(pd)">{{pd.SendingToUnitName}}</td>
+            <td (click)="populateForm(pd)">{{pd.PutUpDate}}</td>
+            <td (click)="populateForm(pd)">{{pd.BarCode}}</td>
+            <td (click)="populateForm(pd)">{{pd.Status}}</td>
+            <td class="text-right">
+
+              <i (click)="AddOrEditItem(pd, i)" class="fa fa-edit fa-lg"></i> |
+              <i (click)="onDelete(pd.Id)" class="fa fa-trash-alt fa-lg text-danger"></i>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+      
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </mat-card-content>
+
+  </mat-card>
+
+
+
+</div>

@@ -1,0 +1,120 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\VISUAL STUDIO PROJECT BACK\\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\\AngularApi\\AngApi.BLL\\AngApi.BLL.csproj": {}
+  },
+  "projects": {
+    "D:\\VISUAL STUDIO PROJECT BACK\\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\\AngularApi\\AngApi.BLL\\AngApi.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VISUAL STUDIO PROJECT BACK\\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\\AngularApi\\AngApi.BLL\\AngApi.BLL.csproj",
+        "projectName": "AngApi.BLL",
+        "projectPath": "D:\\VISUAL STUDIO PROJECT BACK\\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\\AngularApi\\AngApi.BLL\\AngApi.BLL.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "D:\\VISUAL STUDIO PROJECT BACK\\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\\AngularApi\\AngApi.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\VISUAL STUDIO PROJECT BACK\\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\\AngularApi\\AngApi.DAL\\AngApi.DAL.csproj": {
+                "projectPath": "D:\\VISUAL STUDIO PROJECT BACK\\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\\AngularApi\\AngApi.DAL\\AngApi.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\VISUAL STUDIO PROJECT BACK\\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\\AngularApi\\AngApi.DAL\\AngApi.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VISUAL STUDIO PROJECT BACK\\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\\AngularApi\\AngApi.DAL\\AngApi.DAL.csproj",
+        "projectName": "AngApi.DAL",
+        "projectPath": "D:\\VISUAL STUDIO PROJECT BACK\\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\\AngularApi\\AngApi.DAL\\AngApi.DAL.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "D:\\VISUAL STUDIO PROJECT BACK\\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\\AngularApi\\AngApi.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

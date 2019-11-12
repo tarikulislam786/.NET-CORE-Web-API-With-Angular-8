@@ -1,0 +1,88 @@
+E:\Task\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.deps.json
+E:\Task\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.dll
+E:\Task\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.pdb
+E:\Task\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csproj.CoreCompileInputs.cache
+E:\Task\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.AssemblyInfoInputs.cache
+E:\Task\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.AssemblyInfo.cs
+E:\Task\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.dll
+E:\Task\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.pdb
+E:\Task\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csprojAssemblyReference.cache
+D:\E Drive Backup\Task\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.deps.json
+D:\E Drive Backup\Task\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.dll
+D:\E Drive Backup\Task\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.pdb
+D:\E Drive Backup\Task\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csproj.CoreCompileInputs.cache
+D:\E Drive Backup\Task\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.AssemblyInfoInputs.cache
+D:\E Drive Backup\Task\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.AssemblyInfo.cs
+D:\E Drive Backup\Task\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.dll
+D:\E Drive Backup\Task\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.pdb
+D:\E Drive Backup\Task\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csprojAssemblyReference.cache
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.deps.json
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.dll
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.pdb
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.DAL.dll
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.DAL.pdb
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csprojAssemblyReference.cache
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csproj.CoreCompileInputs.cache
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.AssemblyInfoInputs.cache
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.AssemblyInfo.cs
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csproj.CopyComplete
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.dll
+D:\E Drive Backup\Task\this\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.pdb
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.deps.json
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.pdb
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.DAL.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.DAL.pdb
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csprojAssemblyReference.cache
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csproj.CoreCompileInputs.cache
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.AssemblyInfoInputs.cache
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.AssemblyInfo.cs
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csproj.CopyComplete
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.pdb
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.xml
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.deps.json
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.pdb
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.DAL.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.DAL.pdb
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.xml
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csprojAssemblyReference.cache
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csproj.CoreCompileInputs.cache
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.AssemblyInfoInputs.cache
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.AssemblyInfo.cs
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csproj.CopyComplete
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI)\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.pdb
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.deps.json
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.BLL.pdb
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.DAL.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\AngApi.DAL.pdb
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.xml
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csprojAssemblyReference.cache
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csproj.CoreCompileInputs.cache
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.AssemblyInfoInputs.cache
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.AssemblyInfo.cs
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.csproj.CopyComplete
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.dll
+D:\VISUAL STUDIO PROJECT BACK\AngularApi (.NET CORE- Non Generic Repository Pattern, UnitOfWork, DI) last\AngularApi\AngApi.BLL\obj\Debug\netcoreapp2.1\AngApi.BLL.pdb

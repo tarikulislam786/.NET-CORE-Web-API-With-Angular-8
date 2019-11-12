@@ -1,0 +1,33 @@
+<div class="card card-primary">
+  <div class="card-header">
+    <h3 class="card-title">Unit Details</h3>
+  </div>
+  <!-- /.card-header -->
+  <!-- form start -->
+  <form #form="ngForm" autocomplete="off" (submit)="onUnitDetailSubmit(form)">
+    <div class="card-body">
+      <div class="form-group">
+        <input type="hidden" name="Id" [value]="service.formData.Id" />
+        <label for="exampleInputEmail1">Name</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fa fa-info-circle" [class.green-icon]="Name.valid" [class.red-icon]="Name.invalid && Name.touched"></i>
+            </div>
+          </div>
+          <input name="Name" #Name="ngModel" [(ngModel)]="service.formData.Name" class="form-control" placeholder="Item name" required />
+        </div>
+
+      </div>
+    </div>
+    <!-- /.card-body -->
+
+    <div class="card-footer">
+      <div class="form-group">
+        <button class="btn btn-success" type="submit" [disabled]="form.invalid"><i class="fa fa-database"></i> Submit</button>
+        <button [mat-dialog-close] class="btn btn-outline-dark ml-1" type="button"><i class="fa fa-close"></i> Close</button>
+      </div>
+    </div>
+    <!-- /.card-footer -->
+  </form>
+</div>

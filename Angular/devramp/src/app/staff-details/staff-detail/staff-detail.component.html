@@ -1,0 +1,62 @@
+<div class="card card-primary">
+  <div class="card-header">
+    <h3 class="card-title">Staff Details</h3>
+  </div>
+  <!-- /.card-header -->
+  <!-- form start -->
+  <form #form="ngForm" autocomplete="off" (submit)="onStaffDetailSubmit(form)">
+    <div class="card-body">
+      <div class="form-group">
+        <input type="text" name="Id" [value]="service.formData.Id" />
+        <label for="exampleInputEmail1">Unit</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-info-circle" [class.green-icon]="UnitId.valid" [class.red-icon]="UnitId.invalid && UnitId.touched"></i>
+            </div>
+          </div>
+          <select (change)="onUnitChange($event.target.value)" name="UnitId" #UnitId="ngModel" [(ngModel)]="service.formData.UnitId" class="form-control" [class.is-invalid]="!isValid && service.formData.UnitId ==null">
+            <option value=null>-Select Unit-</option>
+            <option *ngFor="let item of unitList" value="{{item.Id}}">{{item.Name}}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Department</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fas fa-info-circle" [class.green-icon]="DepartmentId.valid" [class.red-icon]="DepartmentId.invalid && DepartmentId.touched"></i>
+            </div>
+          </div>
+          <select (change)="onDepartmentChange($event.target.value)" name="DepartmentId" #DepartmentId="ngModel" [(ngModel)]="service.formData.DepartmentId" class="form-control" [class.is-invalid]="!isValid && service.formData.DepartmentId ==null">
+            <option value=null>-Select-Department</option>
+            <option *ngFor="let item of departmentList" value="{{item.Id}}">{{item.Name}}</option>
+
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white">
+              <i class="fa fa-info-circle" [class.green-icon]="Name.valid" [class.red-icon]="Name.invalid && Name.touched"></i>
+            </div>
+          </div>
+          <input name="Name" #Name="ngModel" [(ngModel)]="service.formData.Name" class="form-control" placeholder="Name" required />
+        </div>
+      </div>
+
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer">
+      <div class="form-group">
+        <button class="btn btn-success" type="submit" [disabled]="!submitEnabledOnUnit || !submitEnabledOnDepartment || form.invalid"><i class="fa fa-database"></i> Submit</button>
+        <button [mat-dialog-close] class="btn btn-outline-dark ml-1" type="button"><i class="fa fa-close"></i> Close</button>
+      </div>
+    </div>
+    <!-- /.card-footer -->
+  </form>
+</div>

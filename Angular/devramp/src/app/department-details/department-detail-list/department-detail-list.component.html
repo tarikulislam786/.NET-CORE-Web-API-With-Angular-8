@@ -1,0 +1,117 @@
+<div class="topcontainer pt-3">
+  <div class="row">
+    <div class="col-md-9">
+      <h4>Departments</h4>
+    </div>
+    <div class="col-md-3">
+      <!--<a (click)="AddOrEditItem(null,0)" class="btn btn-outline-primary">
+        <i class="fa fa-plus-square mr5"></i> Create New
+      </a>-->
+
+      <a class="btn btn-outline-primary float-right" (click)="AddOrEditItem(null,0)">
+        <i class="fa fa-plus-square"></i>
+        Add new
+      </a>
+    </div>
+  </div>
+
+</div>
+<div class="containers mt-4">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image">
+        <i class="fa fa-search"></i>
+      </div>
+
+      <mat-card-title>Search</mat-card-title>
+      <!--<mat-card-subtitle>Dog Breed</mat-card-subtitle>-->
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="searching mb-4">
+        <div class="row">
+          <div class="col-md-10">
+            <div class="form-inline">
+              <div class="form-group">
+                <label class="mr-4" for="email">Department Name: </label>
+                <input class="form-control" type="text" name="search" [(ngModel)]="filter">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+
+  </mat-card>
+</div>
+
+
+<div class="containers mt-4">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image">
+
+      </div>
+
+      <!--<mat-card-title>Search</mat-card-title>-->
+      <!--<mat-card-subtitle>Dog Breed</mat-card-subtitle>-->
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <table class="table table-hover">
+        <thead class="thead-light">
+        <th ng-click="sort('Name')">
+          Name
+          <span class="glyphicon sort-icon" *ngIf="key =='Name'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th class="text-right">Actions</th>
+        </thead>
+
+        <tbody>
+
+          <tr *ngFor="let pd of service.list | orderBy: key : reverse | filter:filter | paginate: { itemsPerPage: 5, currentPage: p }; let i= index;">
+            <!--<th (click)="openForEdit(pd.Id)">{{pd.Id}}</th>-->
+            <td (click)="populateForm(pd)">{{pd.Name}}</td>
+            <td class="text-right">
+              <i (click)="AddOrEditItem(pd, i)" class="fa fa-edit fa-lg"></i> |
+              <i (click)="onDelete(pd.Id)" class="fa fa-trash-alt fa-lg text-danger"></i>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+      <!--<mat-table>
+        <ng-container matColumnDef="Name">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Name </mat-header-cell>
+          <mat-cell *matCellDef="let data">  </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="Price">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Price </mat-header-cell>
+          <mat-cell *matCellDef="let data">  </mat-cell>
+        </ng-container>
+
+
+
+
+        <ng-container matColumnDef="action">
+          <mat-header-cell *matHeaderCellDef> Actions </mat-header-cell>
+          <mat-cell *matCellDef="let data">
+            <button mat-button color="primary" (click)="editEmployee(data._id)">Edit</button>
+            <button mat-button color="warn" (click)="deleteEmployee(data._id)">Delete</button>
+          </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </mat-table>-->
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </mat-card-content>
+
+  </mat-card>
+</div>

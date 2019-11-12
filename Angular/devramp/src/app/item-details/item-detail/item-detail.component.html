@@ -1,0 +1,103 @@
+<!--<a (click)="AddOrEditItem(null,service.formData.Id)" class="btn  btn-outline-success" routerLink="item">
+  <i class="fa fa-plus-square mr5"></i>Created New
+</a>-->
+<!--<form #form="ngForm" autocomplete="off" (submit)="onItemDetailSubmit(form)">
+  <div class="form-group">
+    <input type="hidden" name="Id" [value]="service.formData.Id" />
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+          <i class="fa fa-info-circle" [class.green-icon]="Name.valid" [class.red-icon]="Name.invalid && Name.touched"></i>
+        </div>
+      </div>
+      <input name="Name" #Name="ngModel" [(ngModel)]="service.formData.Name" class="form-control" placeholder="Item name" required />
+    </div>
+
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+          <i class="fas fa-money-bill-wave" [class.green-icon]="Price.valid" [class.red-icon]="Price.invalid && Price.touched"></i>
+        </div>
+      </div>
+      <input name="Price" #Price="ngModel" [(ngModel)]="service.formData.Price" class="form-control" placeholder="Price" required />
+    </div>
+
+  </div>
+  <div class="form-group">
+    <button class="btn btn-success" type="submit" [disabled]="form.invalid"><i class="fa fa-database"></i> Submit</button>
+    <button [mat-dialog-close] class="btn btn-outline-dark ml-1" type="button"><i class="fa fa-close"></i> Close</button>
+  </div>
+</form>-->
+  <div class="card card-primary">
+    <div class="form-group">
+      <div class="card-header">
+        <h3 class="card-title">Item Details</h3>
+      </div>
+      <!-- /.card-header -->
+    </div>
+    
+      <!-- form start -->
+    <form enctype="multipart/form-data" #form="ngForm" autocomplete="off" (submit)="onItemDetailSubmit(Name,PhotoFile,Price,Photo)">
+      <div class="card-body">
+        <div class="form-group">
+          <input type="hidden" name="Id" [value]="service.formData.Id" />
+          <!--hidden photo needed to leave the photo name as it is when update form except new uploading -->
+          <input type="hidden" name="Photo" #Photo="ngModel" [(ngModel)]="service.formData.Photo" />
+          <label for="exampleInputEmail1">Name</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-white">
+                <i class="fa fa-info-circle" [class.green-icon]="Name.valid" [class.red-icon]="Name.invalid && Name.touched"></i>
+              </div>
+            </div>
+            <input name="Name" #Name="ngModel" [(ngModel)]="service.formData.Name" class="form-control" placeholder="Item name" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Photo</label>
+          <div class="input-group">
+            <!--<div class="input-group-prepend">
+    <div class="input-group-text bg-white">
+      <i class="fa fa-info-circle" [class.green-icon]="Name.valid" [class.red-icon]="Name.invalid && Name.touched"></i>
+    </div>
+  </div>-->
+            <!--<input type="text" name="Photo" [value]="service.formData.Photo" />-->
+            <!--<img [src]="defaultImageUrl" style="width:225px;height:225px;" />-->
+            <img [src]="service.formData.Photo !='' ? (imageUrl+service.formData.Photo) : defaultImageUrl" style="width:225px;height:225px;" />
+
+            <!--<input type="file" (change)="handleFileInput($event.target.files)" name="Photo" #Photo="ngModel" [(ngModel)]="service.formData.Photo" #Photo accept="image/*" />-->
+            <input type="file" (change)="handleFileInput($event.target.files)" name="PhotoFile" #PhotoFile="ngModel" [(ngModel)]="service.formData.PhotoFile" #PhotoFile accept="image/*" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Price</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-white">
+                <i class="fa fa-info-circle" [class.green-icon]="Price.valid" [class.red-icon]="Price.invalid && Price.touched"></i>
+              </div>
+            </div>
+            <input name="Price" #Price="ngModel" [(ngModel)]="service.formData.Price" class="form-control" placeholder="Price" required />
+          </div>
+        </div>
+      </div>
+      <!-- /.card-body -->
+
+      <div class="card-footer">
+        <div class="form-group">
+          <!--<button class="btn btn-success" type="submit" [disabled]="form.invalid || PhotoFile.value==''"><i class="fa fa-database"></i> Submit</button>-->
+
+          <button *ngIf="service.formData.Photo==''; else otherContent" class="btn btn-success" type="submit" [disabled]="form.invalid || PhotoFile.value==''"><i class="fa fa-database"></i> Submit</button>
+          <ng-template #otherContent>
+            <button class="btn btn-success" type="submit" [disabled]="form.invalid"><i class="fa fa-database"></i> Submit</button>
+          </ng-template>
+          
+          <button [mat-dialog-close] class="btn btn-outline-dark ml-1" type="button"><i class="fa fa-close"></i> Close</button>
+        </div>
+      </div>
+      <!-- /.card-footer -->
+    </form>
+      
+    </div>
