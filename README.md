@@ -10,6 +10,7 @@ iii) AngApi.DAL (Data Access Layer)
 iv) Angular (Angular Frontend Project)
 
 Deployment process:
+
 1.) Database Setup: 
    _______________
    
@@ -21,6 +22,7 @@ Deployment process:
    ( Either follow step A or step B )
    
    Step A (Recommended): 
+   
    Let's open SQL server Management Studio and log in.
    As the application furnished with Code First Approach, open package manager console in visual studio if you are already opened this
    project in Visual studio. In console just type 'update-database'. The database will automatically be created with your given name
@@ -28,6 +30,7 @@ Deployment process:
    add atleast 1 role named with Admin. 
    
    Step B:
+   
    Let's open SQL server Management Studio, create database name it AngularApi. Inside our AngApi project ->
    -> DB SCRIPT BACKUP(Folder), you will be found (AngularApi) SQL Script file. Open this sql file with notepad and copy the
    content. Then go back to sql server management studio and right click on created
@@ -35,8 +38,10 @@ Deployment process:
    Once the database with all the tables is ready, do one more thing - In AspnetRoles table
    add atleast 1 role named with Admin. 
 
+
 2.) Run application:
    ________________
+   
    i) Run backend project: Among these 4 projects, AngApi is our startup project. Let's run the project from visual studio. 
   ii) Run frontend project: Among these 4 projects, Angular is our frontend prject. From visual studio, look at the devramp
       folder which is located inside this Angular project. Just right click on devramp folder and choose open folder in 
