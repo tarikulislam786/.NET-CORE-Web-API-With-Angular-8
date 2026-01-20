@@ -46,7 +46,9 @@ Deployment process:
   ii) Run frontend project: Among these 4 projects, Angular is our frontend prject. From visual studio, look at the devramp
       folder which is located inside this Angular project. Just right click on devramp folder and choose open folder in 
       file explorer. Then click on the address bar of this file explorer and write cmd then press enter. Here you just write
-      ng serve --open and hit enter. 
+	  PS D:\.NET-CORE-Web-API-With-Angular-8-master\Angular\devramp> $env:NODE_OPTIONS="--openssl-legacy-provider"
+	  PS D:\.NET-CORE-Web-API-With-Angular-8-master\Angular\devramp> ng serve --open
+      and hit enter. 
 
 			*********************************   DONE   *****************************************
  
